@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iFrames</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+    <!-- Ensinando colocar paginas, dentro do iframe pra navegação -->
+    <!-- Presta atenção iframe, tem que ter um (name) -->
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia aut, beatae voluptate quibusdam possimus ex voluptatibus, dolores minus ab cupiditate tempore sint odit et maxime id, minima dolorem in explicabo!</p>
+    
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque rem amet excepturi exercitationem magnam voluptatem aut, dicta laborum maiores consequatur reprehenderit voluptate minima architecto, ex illum necessitatibus ducimus doloribus veniam!</p>
+    <!-- SRCDOC é melhor q SRC -->
+    <!-- SRCDOC é pra colocar um HTML, pra colocar algo esteticamente, pra não precisar carregar ele separado -->
+    <iframe id="tela" name="frame" srcdoc="<h1> Escolha uma das opções acima</h1><p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nulla deserunt at quae commodi voluptatibus, laudantium sit sint, qui mollitia molestias necessitatibus fugit ratione cupiditate, officiis dolor libero in impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed animi veritatis architecto enim, ad perferendis neque dolor consequuntur voluptatum assumenda ipsam iure quidem eligendi vel at cum fugit rem porro?</p><img src='imagens/wallpaper006.jpg'>">
+        <p>Infelizmente seu navegador não é compativel com isso.</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nulla deserunt at quae commodi voluptatibus, laudantium sit sint, qui mollitia molestias necessitatibus fugit ratione cupiditate, officiis dolor libero in impedit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed animi veritatis architecto enim, ad perferendis neque dolor consequuntur voluptatum assumenda ipsam iure quidem eligendi vel at cum fugit rem porro?</p>
+</body>
+</html>
