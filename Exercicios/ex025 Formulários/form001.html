@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- Fazer sempre ligação nomes e etiquetas -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- Para não aparecer na barra de pesquisa (métodos get e post (get normal - post pra esconder)) lembrando que o dado não esta protegido -->
+        
+        <!-- colocar dentro do label sempre o id (sempre colocar algo pra diferençiar name e id) -->
+        <p><label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <!-- para linguagens como php e html (name), para liguagens java (id) mais utilizados  -->
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+        <!-- label é util pra deixa mais profissional e deixar o nome e caixa ligados -->
+    </form>
+</body>
+</html>
