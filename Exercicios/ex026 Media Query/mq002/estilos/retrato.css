@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/* Aparelho em Pé (orientation: portrait) */
+
+body {
+    background: url(../imagens/cev-portrait.jpg);
+    background-size: cover;
+    background-position: center bottom;
+}
